@@ -5,7 +5,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import { RiCloseLine, RiCheckLine } from "react-icons/ri";
 import { useApp } from "@/app/context/AppContext";
 import { Transaction, Category, TransactionType } from "@/app/types";
-import { EXPENSE_CATEGORIES, INCOME_CATEGORIES } from "@/app/mock-data/mockData";
+import {
+  EXPENSE_CATEGORIES,
+  INCOME_CATEGORIES,
+} from "@/app/mock-data/mockData";
 
 interface Props {
   open: boolean;
@@ -22,7 +25,11 @@ const emptyForm = {
   merchant: "",
 };
 
-export default function AddTransactionModal({ open, onClose, editingTransaction }: Props) {
+export default function AddTransactionModal({
+  open,
+  onClose,
+  editingTransaction,
+}: Props) {
   const { addTransaction, editTransaction } = useApp();
   const [form, setForm] = useState(emptyForm);
   const [error, setError] = useState("");
@@ -47,8 +54,12 @@ export default function AddTransactionModal({ open, onClose, editingTransaction 
     form.type === "income" ? INCOME_CATEGORIES : EXPENSE_CATEGORIES;
 
   const handleSubmit = () => {
-    // ✅ FIXED
-    if (!form.date || !form.amount || !form.description || !form.merchant) {
+    if (
+      !form.date ||
+      !form.amount ||
+      !form.description ||
+      !form.merchant
+    ) {
       setError("Please fill in all required fields.");
       return;
     }
@@ -77,7 +88,7 @@ export default function AddTransactionModal({ open, onClose, editingTransaction 
     onClose();
   };
 
-  const inputStyle: React.CSSProperties = {
+  const inputStyle = {
     background: "rgba(255,255,255,0.04)",
     border: "1px solid rgba(255,255,255,0.1)",
     borderRadius: "8px",
@@ -88,7 +99,7 @@ export default function AddTransactionModal({ open, onClose, editingTransaction 
     width: "100%",
     outline: "none",
     transition: "border-color 0.2s ease",
-  };
+  } as React.CSSProperties;
 
   const labelStyle = {
     display: "block",
@@ -134,7 +145,8 @@ export default function AddTransactionModal({ open, onClose, editingTransaction 
               width: "100%",
               maxWidth: "460px",
               margin: "0 16px",
-              background: "linear-gradient(135deg, #111827 0%, #0f172a 100%)",
+              background:
+                "linear-gradient(135deg, #111827 0%, #0f172a 100%)",
               border: "1px solid rgba(255,255,255,0.1)",
               borderRadius: "20px",
               padding: "28px",
@@ -142,22 +154,103 @@ export default function AddTransactionModal({ open, onClose, editingTransaction 
             }}
           >
             {/* Header */}
-            <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "24px" }}>
-              <h2 style={{ fontSize: "18px", color: "#f1f5f9" }}>
-                {editingTransaction ? "Edit Transaction" : "New Transaction"}
-              </h2>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
+                marginBottom: "24px",
+              }}
+            >
+              <div>
+                <h2
+                  style={{
+                    fontFamily: "Syne, sans-serif",
+                    fontSize: "18px",
+                    fontWeight: 700,
+                    color: "#f1f5f9",
+                  }}
+                >
+                  {editingTransaction
+                    ? "Edit Transaction"
+                    : "New Transaction"}
+                </h2>
+              </div>
               <button onClick={onClose}>
-                <RiCloseLine />
+                <RiCloseLine size={18} />
               </button>
             </div>
 
-            {/* Error */}
-            {error && <p style={{ color: "#f87171" }}>{error}</p>}
+            <div style={{ display: "grid", gap: "16px" }}>
+              <input
+                type="number"
+                placeholder="Amount"
+                value={form.amount}
+                onChange={(e) =>
+                  setForm((f) => ({
+                    ...f,
+                    amount: e.target.value,
+                  }))
+                }
+                style={inputStyle}
+              />
 
-            {/* Actions */}
+              <input
+                type="date"
+                value={form.date}
+                onChange={(e) =>
+                  setForm((f) => ({
+                    ...f,
+                    date: e.target.value,
+                  }))
+                }
+                style={inputStyle}
+              />
+
+              <select
+                value={form.category}
+                onChange={(e) =>
+                  setForm((f) => ({
+                    ...f,
+                    category: e.target.value as Category,
+                  }))
+                }
+                style={inputStyle}
+              >
+                {categories.map((c) => (
+                  <option key={c}>{c}</option>
+                ))}
+              </select>
+
+              <input
+                placeholder="Merchant"
+                value={form.merchant}
+                onChange={(e) =>
+                  setForm((f) => ({
+                    ...f,
+                    merchant: e.target.value,
+                  }))
+                }
+                style={inputStyle}
+              />
+
+              <input
+                placeholder="Description"
+                value={form.description}
+                onChange={(e) =>
+                  setForm((f) => ({
+                    ...f,
+                    description: e.target.value,
+                  }))
+                }
+                style={inputStyle}
+              />
+            </div>
+
+            {error && <p style={{ color: "red" }}>{error}</p>}
+
             <button onClick={handleSubmit}>
-              <RiCheckLine />
-              {editingTransaction ? "Save Changes" : "Add Transaction"}
+              {editingTransaction ? "Save" : "Add"}
             </button>
           </motion.div>
         </>
