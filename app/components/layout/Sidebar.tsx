@@ -87,28 +87,9 @@ export default function Sidebar() {
         </div>
       </div>
 
-      {/* Nav label */}
-      <div
-        style={{
-          padding: "20px 24px 8px",
-        }}
-      >
-        <span
-          style={{
-            fontSize: "10px",
-            fontWeight: 600,
-            letterSpacing: "0.12em",
-            textTransform: "uppercase",
-            color: "#475569",
-            fontFamily: "DM Mono, monospace",
-          }}
-        >
-          Navigation
-        </span>
-      </div>
-
+     
       {/* Nav items */}
-      <nav style={{ padding: "0 12px", flex: 1 }}>
+      <nav style={{ padding: "0 12px", margin: "10px 0", flex: 1 }}>
         {navItems.map((item) => {
           const active = activeTab === item.id;
           const Icon = item.icon;
