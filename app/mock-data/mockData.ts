@@ -37,7 +37,7 @@ export const mockTransactions: Transaction[] = [
   // January
   {
     id: "t001",
-    date: "2024-01-05",
+    date: "2025-01-05",
     amount: 5800,
     category: "Salary",
     type: "income",
@@ -46,7 +46,7 @@ export const mockTransactions: Transaction[] = [
   },
   {
     id: "t002",
-    date: "2024-01-07",
+    date: "2025-01-07",
     amount: 1200,
     category: "Rent",
     type: "expense",
@@ -55,7 +55,7 @@ export const mockTransactions: Transaction[] = [
   },
   {
     id: "t003",
-    date: "2024-01-10",
+    date: "2025-01-10",
     amount: 340,
     category: "Food & Dining",
     type: "expense",
@@ -64,7 +64,7 @@ export const mockTransactions: Transaction[] = [
   },
   {
     id: "t004",
-    date: "2024-01-12",
+    date: "2025-01-12",
     amount: 850,
     category: "Freelance",
     type: "income",
@@ -73,7 +73,7 @@ export const mockTransactions: Transaction[] = [
   },
   {
     id: "t005",
-    date: "2024-01-15",
+    date: "2025-01-15",
     amount: 95,
     category: "Transport",
     type: "expense",
@@ -82,7 +82,7 @@ export const mockTransactions: Transaction[] = [
   },
   {
     id: "t006",
-    date: "2024-01-18",
+    date: "2025-01-18",
     amount: 210,
     category: "Shopping",
     type: "expense",
@@ -91,7 +91,7 @@ export const mockTransactions: Transaction[] = [
   },
   {
     id: "t007",
-    date: "2024-01-20",
+    date: "2025-01-20",
     amount: 65,
     category: "Entertainment",
     type: "expense",
@@ -100,7 +100,7 @@ export const mockTransactions: Transaction[] = [
   },
   {
     id: "t008",
-    date: "2024-01-22",
+    date: "2025-01-22",
     amount: 145,
     category: "Utilities",
     type: "expense",
@@ -109,7 +109,7 @@ export const mockTransactions: Transaction[] = [
   },
   {
     id: "t009",
-    date: "2024-01-28",
+    date: "2025-01-28",
     amount: 300,
     category: "Investment",
     type: "income",
@@ -118,7 +118,7 @@ export const mockTransactions: Transaction[] = [
   },
   {
     id: "t010",
-    date: "2024-01-30",
+    date: "2025-01-30",
     amount: 80,
     category: "Healthcare",
     type: "expense",
@@ -129,7 +129,7 @@ export const mockTransactions: Transaction[] = [
   // February
   {
     id: "t011",
-    date: "2024-02-05",
+    date: "2025-02-05",
     amount: 5800,
     category: "Salary",
     type: "income",
@@ -138,7 +138,7 @@ export const mockTransactions: Transaction[] = [
   },
   {
     id: "t012",
-    date: "2024-02-07",
+    date: "2025-02-07",
     amount: 1200,
     category: "Rent",
     type: "expense",
@@ -147,7 +147,7 @@ export const mockTransactions: Transaction[] = [
   },
   {
     id: "t013",
-    date: "2024-02-09",
+    date: "2025-02-09",
     amount: 290,
     category: "Food & Dining",
     type: "expense",
@@ -156,7 +156,7 @@ export const mockTransactions: Transaction[] = [
   },
   {
     id: "t014",
-    date: "2024-02-14",
+    date: "2025-02-14",
     amount: 180,
     category: "Shopping",
     type: "expense",
@@ -165,7 +165,7 @@ export const mockTransactions: Transaction[] = [
   },
   {
     id: "t015",
-    date: "2024-02-16",
+    date: "2025-02-16",
     amount: 1500,
     category: "Freelance",
     type: "income",
@@ -174,7 +174,7 @@ export const mockTransactions: Transaction[] = [
   },
   {
     id: "t016",
-    date: "2024-02-18",
+    date: "2025-02-18",
     amount: 95,
     category: "Transport",
     type: "expense",
@@ -183,7 +183,7 @@ export const mockTransactions: Transaction[] = [
   },
   {
     id: "t017",
-    date: "2024-02-20",
+    date: "2025-02-20",
     amount: 145,
     category: "Utilities",
     type: "expense",
@@ -192,7 +192,7 @@ export const mockTransactions: Transaction[] = [
   },
   {
     id: "t018",
-    date: "2024-02-25",
+    date: "2025-02-25",
     amount: 250,
     category: "Education",
     type: "expense",
@@ -203,7 +203,7 @@ export const mockTransactions: Transaction[] = [
   // March
   {
     id: "t019",
-    date: "2024-03-05",
+    date: "2025-03-05",
     amount: 5800,
     category: "Salary",
     type: "income",
@@ -212,7 +212,7 @@ export const mockTransactions: Transaction[] = [
   },
   {
     id: "t020",
-    date: "2024-03-07",
+    date: "2025-03-07",
     amount: 1200,
     category: "Rent",
     type: "expense",
@@ -221,7 +221,7 @@ export const mockTransactions: Transaction[] = [
   },
   {
     id: "t021",
-    date: "2024-03-10",
+    date: "2025-03-10",
     amount: 410,
     category: "Food & Dining",
     type: "expense",
@@ -230,7 +230,7 @@ export const mockTransactions: Transaction[] = [
   },
   {
     id: "t022",
-    date: "2024-03-12",
+    date: "2025-03-12",
     amount: 500,
     category: "Investment",
     type: "income",
@@ -239,7 +239,7 @@ export const mockTransactions: Transaction[] = [
   },
   {
     id: "t023",
-    date: "2024-03-14",
+    date: "2025-03-14",
     amount: 320,
     category: "Shopping",
     type: "expense",
@@ -248,7 +248,7 @@ export const mockTransactions: Transaction[] = [
   },
   {
     id: "t024",
-    date: "2024-03-18",
+    date: "2025-03-18",
     amount: 95,
     category: "Transport",
     type: "expense",
@@ -257,7 +257,7 @@ export const mockTransactions: Transaction[] = [
   },
   {
     id: "t025",
-    date: "2024-03-20",
+    date: "2025-03-20",
     amount: 145,
     category: "Utilities",
     type: "expense",
@@ -266,7 +266,7 @@ export const mockTransactions: Transaction[] = [
   },
   {
     id: "t026",
-    date: "2024-03-22",
+    date: "2025-03-22",
     amount: 200,
     category: "Healthcare",
     type: "expense",
@@ -275,7 +275,7 @@ export const mockTransactions: Transaction[] = [
   },
   {
     id: "t027",
-    date: "2024-03-28",
+    date: "2025-03-28",
     amount: 2000,
     category: "Freelance",
     type: "income",
@@ -286,7 +286,7 @@ export const mockTransactions: Transaction[] = [
   // April
   {
     id: "t028",
-    date: "2024-04-05",
+    date: "2025-04-05",
     amount: 5800,
     category: "Salary",
     type: "income",
@@ -295,7 +295,7 @@ export const mockTransactions: Transaction[] = [
   },
   {
     id: "t029",
-    date: "2024-04-07",
+    date: "2025-04-07",
     amount: 1200,
     category: "Rent",
     type: "expense",
@@ -304,7 +304,7 @@ export const mockTransactions: Transaction[] = [
   },
   {
     id: "t030",
-    date: "2024-04-11",
+    date: "2025-04-11",
     amount: 370,
     category: "Food & Dining",
     type: "expense",
@@ -313,7 +313,7 @@ export const mockTransactions: Transaction[] = [
   },
   {
     id: "t031",
-    date: "2024-04-15",
+    date: "2025-04-15",
     amount: 700,
     category: "Investment",
     type: "income",
@@ -322,7 +322,7 @@ export const mockTransactions: Transaction[] = [
   },
   {
     id: "t032",
-    date: "2024-04-18",
+    date: "2025-04-18",
     amount: 95,
     category: "Transport",
     type: "expense",
@@ -331,7 +331,7 @@ export const mockTransactions: Transaction[] = [
   },
   {
     id: "t033",
-    date: "2024-04-20",
+    date: "2025-04-20",
     amount: 145,
     category: "Utilities",
     type: "expense",
@@ -340,7 +340,7 @@ export const mockTransactions: Transaction[] = [
   },
   {
     id: "t034",
-    date: "2024-04-23",
+    date: "2025-04-23",
     amount: 480,
     category: "Shopping",
     type: "expense",
@@ -349,7 +349,7 @@ export const mockTransactions: Transaction[] = [
   },
   {
     id: "t035",
-    date: "2024-04-27",
+    date: "2025-04-27",
     amount: 120,
     category: "Entertainment",
     type: "expense",
@@ -360,7 +360,7 @@ export const mockTransactions: Transaction[] = [
   // May
   {
     id: "t036",
-    date: "2024-05-05",
+    date: "2025-05-05",
     amount: 5800,
     category: "Salary",
     type: "income",
@@ -369,7 +369,7 @@ export const mockTransactions: Transaction[] = [
   },
   {
     id: "t037",
-    date: "2024-05-07",
+    date: "2025-05-07",
     amount: 1200,
     category: "Rent",
     type: "expense",
@@ -378,7 +378,7 @@ export const mockTransactions: Transaction[] = [
   },
   {
     id: "t038",
-    date: "2024-05-10",
+    date: "2025-05-10",
     amount: 1200,
     category: "Freelance",
     type: "income",
@@ -387,7 +387,7 @@ export const mockTransactions: Transaction[] = [
   },
   {
     id: "t039",
-    date: "2024-05-13",
+    date: "2025-05-13",
     amount: 350,
     category: "Food & Dining",
     type: "expense",
@@ -396,7 +396,7 @@ export const mockTransactions: Transaction[] = [
   },
   {
     id: "t040",
-    date: "2024-05-18",
+    date: "2025-05-18",
     amount: 95,
     category: "Transport",
     type: "expense",
@@ -405,7 +405,7 @@ export const mockTransactions: Transaction[] = [
   },
   {
     id: "t041",
-    date: "2024-05-20",
+    date: "2025-05-20",
     amount: 145,
     category: "Utilities",
     type: "expense",
@@ -414,7 +414,7 @@ export const mockTransactions: Transaction[] = [
   },
   {
     id: "t042",
-    date: "2024-05-24",
+    date: "2025-05-24",
     amount: 380,
     category: "Education",
     type: "expense",
@@ -423,7 +423,7 @@ export const mockTransactions: Transaction[] = [
   },
   {
     id: "t043",
-    date: "2024-05-28",
+    date: "2025-05-28",
     amount: 900,
     category: "Investment",
     type: "income",
@@ -434,7 +434,7 @@ export const mockTransactions: Transaction[] = [
   // June
   {
     id: "t044",
-    date: "2024-06-05",
+    date: "2025-06-05",
     amount: 5800,
     category: "Salary",
     type: "income",
@@ -443,7 +443,7 @@ export const mockTransactions: Transaction[] = [
   },
   {
     id: "t045",
-    date: "2024-06-07",
+    date: "2025-06-07",
     amount: 1200,
     category: "Rent",
     type: "expense",
@@ -452,7 +452,7 @@ export const mockTransactions: Transaction[] = [
   },
   {
     id: "t046",
-    date: "2024-06-10",
+    date: "2025-06-10",
     amount: 430,
     category: "Food & Dining",
     type: "expense",
@@ -461,7 +461,7 @@ export const mockTransactions: Transaction[] = [
   },
   {
     id: "t047",
-    date: "2024-06-14",
+    date: "2025-06-14",
     amount: 600,
     category: "Shopping",
     type: "expense",
@@ -470,7 +470,7 @@ export const mockTransactions: Transaction[] = [
   },
   {
     id: "t048",
-    date: "2024-06-18",
+    date: "2025-06-18",
     amount: 95,
     category: "Transport",
     type: "expense",
@@ -479,7 +479,7 @@ export const mockTransactions: Transaction[] = [
   },
   {
     id: "t049",
-    date: "2024-06-20",
+    date: "2025-06-20",
     amount: 145,
     category: "Utilities",
     type: "expense",
@@ -488,7 +488,7 @@ export const mockTransactions: Transaction[] = [
   },
   {
     id: "t050",
-    date: "2024-06-22",
+    date: "2025-06-22",
     amount: 1800,
     category: "Freelance",
     type: "income",
@@ -497,7 +497,7 @@ export const mockTransactions: Transaction[] = [
   },
   {
     id: "t051",
-    date: "2024-06-28",
+    date: "2025-06-28",
     amount: 240,
     category: "Entertainment",
     type: "expense",

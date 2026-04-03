@@ -82,7 +82,7 @@ export default function Sidebar() {
               letterSpacing: "-0.02em",
             }}
           >
-            Fin<span style={{ color: "#22d3ee" }}>Flow</span>
+            Zar<span style={{ color: "#22d3ee" }}>Flow</span>
           </span>
         </div>
       </div>
@@ -143,7 +143,7 @@ export default function Sidebar() {
             fontFamily: "DM Mono, monospace",
           }}
         >
-          v1.0.0 - 2025
+            &copy; {new Date().getFullYear()} Zarflow
         </p>
       </div>
     </div>

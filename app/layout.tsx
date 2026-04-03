@@ -3,7 +3,7 @@ import "./globals.css";
 import { AppProvider } from "@/app/context/AppContext";
 
 export const metadata: Metadata = {
-  title: "FinFlow - Finance Dashboard",
+  title: "ZarFlow - Finance Dashboard",
   description: "A clean, interactive personal finance dashboard",
 };
 

@@ -351,7 +351,7 @@ export default function Header() {
             color: "#f1f5f9",
           }}
         >
-          Fin<span style={{ color: "#22d3ee" }}>Flow</span>
+          Zar<span style={{ color: "#22d3ee" }}>Flow</span>
         </span>
       </div>
 

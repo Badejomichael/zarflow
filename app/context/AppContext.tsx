@@ -84,7 +84,6 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     setFiltersState(defaultFilters);
   }, []);
 
-  // ✅ FIXED: template literal
   const addTransaction = useCallback((t: Omit<Transaction, "id">) => {
     const newT: Transaction = { ...t, id: `t_${Date.now()}` };
     setTransactions((prev) => [newT, ...prev]);
@@ -170,7 +169,6 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
 
   const totalBalance = totalIncome - totalExpenses;
 
-  // ✅ FIXED: template literal
   const monthlySummaries = useMemo((): MonthlySummary[] => {
     const months: Record<
       string,
