@@ -53,7 +53,7 @@ npm start
 | Animations | Framer Motion | Smooth, spring-based transitions throughout |
 | Charts | Recharts | Composable, plays well with React |
 | Icons | React Icons (Remix Icon set) | Consistent, clean icon language |
-| State | React Context + hooks | Right-sized for this scope — no Redux needed |
+| State | React Context + hooks | Right-sized for this scope(no Redux needed) |
 | Persistence | localStorage | Transactions survive a page refresh |
 
 ---
@@ -110,7 +110,7 @@ A few things I made deliberate choices about and want to be transparent about:
 
 **Inline styles over Tailwind classes for component-level design.** Tailwind is great for layout and spacing, but when a component has many conditional style states — active/inactive, open/closed, income/expense — inline styles make the logic much easier to follow in one place. The global CSS handles fonts, colour tokens, and base resets.
 
-**The modal centering fix.** Framer Motion owns the `transform` CSS property on any `motion.div` it animates. If you also set `transform: translate(-50%, -50%)` for centering on the same element, Motion overwrites it during the animation. The solution is a static flex wrapper div that handles centering, with the animated panel sitting inside it — Motion can animate freely without fighting the positioning.
+**The modal centering fix.** Framer Motion owns the `transform` CSS property on any `motion.div` it animates. If you also set `transform: translate(-50%, -50%)` for centering on the same element, Motion overwrites it during the animation. The solution is a static flex wrapper div that handles centering, with the animated panel sitting inside it. Motion can animate freely without fighting the positioning.
 
 **localStorage for persistence.** Transactions you add or edit survive a page refresh. If you want to reset to the original mock data, open your browser's DevTools, go to Application → Local Storage, and delete the `fd_transactions` key.
 
@@ -132,6 +132,6 @@ These didn't make it in but would be the natural next steps:
 
 The mock data covers January through June 2025 — 51 transactions spread across income categories (Salary, Freelance, Investment) and expense categories (Rent, Food & Dining, Transport, Shopping, Healthcare, Entertainment, Utilities, Education). The data was designed to have realistic patterns so the insights section has something meaningful to say.
 
-All state management runs through a single `AppContext`. It's not over-engineered — no reducers, no action types, just `useState` and `useMemo` with stable `useCallback` references. For an app of this scope, that's the right call.
+All state management runs through a single `AppContext`. It's not over-engineered(no reducers, no action types, just `useState` and `useMemo` with stable `useCallback` references). For an app of this scope, that's the right call.
 
 If anything looks off or you have questions about any of the decisions, I'm happy to walk through it.
