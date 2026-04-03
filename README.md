@@ -6,7 +6,7 @@ A clean, interactive finance dashboard built as part of a frontend developer int
 
 ## What it does
 
-FinFlow gives you a bird's-eye view of your financial life across three main areas:
+ZarFlow gives you a bird's-eye view of your financial life across three main areas:
 
 **Dashboard** — the first thing you see. Summary cards show your total balance, income, expenses, and savings rate at a glance. Below that, an area chart tracks your monthly balance trend over time, and a donut chart breaks down where your money is going by category.
 
